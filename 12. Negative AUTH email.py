@@ -22,7 +22,7 @@ d.find_element(By.NAME, "USER_LOGIN").send_keys(loginmail1)
 d.find_element(By.NAME, "USER_PASSWORD").send_keys(passw)
 d.find_element(By.CSS_SELECTOR, "#avtorization-form > div.but-r > div.buttons.clearfix > input").click()
 
-print("Error with loginmail1 - ", d.find_element(By.CSS_SELECTOR, "#ajax_auth > div.alert.alert-danger").text)
+print("Error with loginmail1", loginmail1, d.find_element(By.CSS_SELECTOR, "#ajax_auth > div.alert.alert-danger").text)
 
 d.find_element(By.NAME, "USER_LOGIN").clear()
 d.find_element(By.NAME, "USER_PASSWORD").clear()
@@ -30,7 +30,7 @@ d.find_element(By.NAME, "USER_LOGIN").send_keys(loginmail2)
 d.find_element(By.NAME, "USER_PASSWORD").send_keys(passw)
 d.find_element(By.CSS_SELECTOR, "#avtorization-form > div.but-r > div.buttons.clearfix > input").click()
 
-print("Error with loginmail2 - ", d.find_element(By.CSS_SELECTOR, "#ajax_auth > div.alert.alert-danger").text)
+print("Error with loginmail2", loginmail2, d.find_element(By.CSS_SELECTOR, "#ajax_auth > div.alert.alert-danger").text)
 
 
 
